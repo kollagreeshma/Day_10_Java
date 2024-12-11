@@ -1,0 +1,11 @@
+class fact{
+    int sum(int n){
+        if(n==0) return 1;
+        return n*sum(n-1);
+    }
+    public static void main(String args[]){
+        fact s=new fact();
+        int res=s.sum(10);
+        System.out.println(res);
+    }
+}
